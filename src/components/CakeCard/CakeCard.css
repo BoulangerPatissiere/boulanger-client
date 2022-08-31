@@ -1,0 +1,11 @@
+.cakes-container > .MuiCard-root {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  width: 360px;
+  height: 580px;
+}
+
+
+.cake-card {
+}
