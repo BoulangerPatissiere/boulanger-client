@@ -3,9 +3,12 @@
   margin-right: 12px;
   margin-bottom: 24px;
   width: 360px;
-  height: 580px;
+  height: 600px;
 }
 
 
-.cake-card {
+.cake-card-title {
+  line-height: 1.334em;
+  height: 2.668em;
+  overflow: hidden;
 }

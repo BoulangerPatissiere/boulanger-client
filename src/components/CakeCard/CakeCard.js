@@ -21,7 +21,7 @@ function CakeCard(props) {
                     alt="Cannot disply cake photo"
                 />}
             <CardContent className="cake-card">
-                <Typography variant="h5" component="div">{cake.name}</Typography>
+                <Typography variant="h5" component="div" className="cake-card-title">{cake.name}</Typography>
                 <Typography variant='body'>{cake.description}</Typography>
                 <CakePrice />
             </CardContent>
