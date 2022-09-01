@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link } from "react-router-dom";
 import { CAKES_ROUTE, ABOUT_ROUTE } from '../../constants';
-import logo from '../../boulanger_logo_cropped_removebg.png';
+import logo from '../../logo_new_cropped.jpg';
 import './ElevatingAppBar.css';
 import '../../global/GlobalStyles.css';
 
@@ -34,10 +34,8 @@ export default function ElevatingAppBar(props) {
             <ElevationScroll {...props}>
                 <AppBar position="sticky" className="app-bar">
                     <Toolbar className="app-bar-toolbar">
-                        <div className="app-bar-logo">
-                            <img src={logo} className="app-bar-logo-img" alt="logo" />
-                        </div>
                         <div className="app-bar-links-div">
+                            <img src={logo} className="app-bar-logo" alt="Boulanger & Patissiere" />
                             {/* <Button color="inherit" sx={{ 'margin-right': '12px' }}><Link to={CAKES_ROUTE} className="no-link"><Typography variant="h3">Home</Typography></Link></Button> */}
                             {/* <Button color="inherit" sx={{ 'margin-left': '12px' }}><Link to={ABOUT_ROUTE} className="no-link"><Typography variant="h3">About</Typography></Link></Button> */}
                         </div>
