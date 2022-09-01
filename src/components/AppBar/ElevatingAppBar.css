@@ -24,9 +24,22 @@ header {
 .app-bar-logo {
   width: 80%;
 }
+
 @media (min-width: 770px) {
   .app-bar-logo {
     width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .app-bar-logo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .app-bar-logo {
+    width: 40%;
   }
 }
 
