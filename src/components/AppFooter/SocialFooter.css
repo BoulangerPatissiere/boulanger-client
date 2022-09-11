@@ -1,0 +1,33 @@
+.social-footer {
+  height: 4.5rem;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -2px 4px -1px rgb(0 0 0 / 20%), 0px -4px 5px 0px rgb(0 0 0 / 14%), 0px -1px 10px 0px rgb(0 0 0 / 12%);
+  z-index: 1100;
+}
+
+.social-footer-link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.left-col {
+  justify-content: flex-end;
+}
+@media screen and (min-width: 900px) {
+  .left-col {
+    justify-content: center;
+  }
+  .right-col {
+    justify-content: center;
+  }
+}
+
+.social-footer-link-icon {
+  margin-right: 4px;
+}
