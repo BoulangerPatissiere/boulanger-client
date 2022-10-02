@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link } from "react-router-dom";
-import { CAKES_ROUTE, ABOUT_ROUTE } from '../../constants';
+import { CAKES_ROUTE, ABOUT_ROUTE } from '../../global/constants';
 import logo from '../../logo_new_cropped.jpg';
 import './ElevatingAppBar.css';
 import '../../global/GlobalStyles.css';
