@@ -13,7 +13,6 @@ import SocialFooter from './components/AppFooter/SocialFooter';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { green } from '@mui/material/colors';
 import './App.css';
 
 const theme = createTheme({
@@ -24,7 +23,9 @@ const theme = createTheme({
       dark: "#4f1212",
     },
     secondary: {
-      main: green[500],
+      light: "#83d2e6",
+      main: "#2a7080",
+      dark: "#214e56"
     },
   },
 });
