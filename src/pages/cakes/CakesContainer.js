@@ -8,12 +8,14 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 import { useTheme } from '@mui/material/styles';
+import { useDeviceDetect } from '../../global/hooks';
 import OrderNowDialog from '../../components/OrderNowDialog/OrderNowDialog';
 import { api, ProductType } from '../../global/constants';
 import './CakesContainer.css';
 
 function CakesContainer() {
     const theme = useTheme();
+    const isMobile = useDeviceDetect();
     const [cakes, setCakes] = useState([]);
     const [isSuccess, setIsSuccess] = useState(0);
     const [product, setProduct] = useState(null);
@@ -122,7 +124,7 @@ function CakesContainer() {
                     {isSuccess < 0 ? "Sorry, somethin went wrong. Your order was not sent." : "Success! Your order has been sent."}
                 </Alert>
             </Collapse>
-            <Typography sx={{ mb: 2 }} variant="h6" style={{ color: theme.palette.primary.dark, textAlign: "center", fontStyle: "italic" }}>
+            <Typography sx={{ mb: 2 }} variant={isMobile ? "body" : "h6"} style={{ color: theme.palette.primary.dark, textAlign: "center", fontStyle: "italic" }}>
                 YOU CAN CHOOSE THE “GLUTEN-FREE” OPTION FOR ANY CAKE BELOW, A DECORATION ALSO CAN BE CHOSEN DIFFERENTLY. THE PRICE WILL REMAIN THE SAME.
             </Typography>
             {isOrderNowDialogOpen && (
