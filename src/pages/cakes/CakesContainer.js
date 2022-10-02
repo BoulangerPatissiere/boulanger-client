@@ -124,7 +124,7 @@ function CakesContainer() {
                     {isSuccess < 0 ? "Sorry, somethin went wrong. Your order was not sent." : "Success! Your order has been sent."}
                 </Alert>
             </Collapse>
-            <Typography sx={{ mb: 2 }} variant={isMobile ? "body" : "h6"} style={{ color: theme.palette.primary.dark, textAlign: "center", fontStyle: "italic" }}>
+            <Typography component="div" sx={{ mb: 2, pl: 1, pr: 1 }} variant={isMobile ? "body2" : "h6"} style={{ color: theme.palette.primary.dark, textAlign: "center", fontStyle: "italic" }}>
                 YOU CAN CHOOSE THE “GLUTEN-FREE” OPTION FOR ANY CAKE BELOW, A DECORATION ALSO CAN BE CHOSEN DIFFERENTLY. THE PRICE WILL REMAIN THE SAME.
             </Typography>
             {isOrderNowDialogOpen && (

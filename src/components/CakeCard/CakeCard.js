@@ -33,7 +33,7 @@ function CakeCard(props) {
                 {isMobile ?
                     <Stack direction="row" justifyContent="space-between" alignItems="center">
                         <CakePrice />
-                        <Fab color="primary" className="cake-card-fab" sx={{ marginRight: "20px" }}>
+                        <Fab color="primary" className="cake-card-fab" sx={{ marginRight: "20px" }} onClick={() => onOrderNowClicked(cake)}>
                             <ShoppingCartIcon />
                         </Fab>
                     </Stack>
