@@ -226,7 +226,7 @@ export default function OrderNowDialog({ isOpen, model, onConfirmed, onCanceled,
                     label="Additional message"
                     value={messageModel.message}
                     onChange={e => { setMessageModel({ ...messageModel, message: e.target.value }) }}
-                    helperText="If you would like a custom decoration, a gluten free option or a different pick up or delivery time, please, write you wished and we will get back to you."
+                    helperText="If you would like a custom decoration, a gluten free option or a different pick up or delivery time, please, write you wishes and we will get back to you."
                 />
                 <Stack direction="row" spacing={1} alignItems="center" justifyContent="space-between" sx={{ marginBottom: '12px', marginTop: '12px' }}>
                     <Typography variant="h5">Total price: </Typography>
