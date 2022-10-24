@@ -90,7 +90,7 @@ function CakesContainer() {
                 <p><span style="font-weight: bold">Size: </span><span>${message.variant.size}</span></p>
                 <p><span style="font-weight: bold">Price: </span><span>${message.price} EUR</span></p>
                 <p><span style="font-weight: bold">Delivery or Pickup: </span><span>${message.isDelivery ? "Delivery" : "Pick up"}</span></p>
-                <p><span style="font-weight: bold">Delivery/Pickup date & time </span><span>${message.dueDate.format("dddd, MMMM d YYYY HH:mm")}</span></p>
+                <p><span style="font-weight: bold">Delivery/Pickup date & time </span><span>${message.dueDate.format("dddd, MMMM DD YYYY HH:mm")}</span></p>
                 ${message.isDelivery ? `<p><span style="font-weight: bold">Delivery address: </span><span>${message.deliveryAddress}</span></p>` : ""}
                 ${message.message ? `<p><span style="font-weight: bold">Additional message: </span><span>${message.message}</span></p>` : ""}
             <img src="cid:cake-image" style="object-fit:cover"/>`;
