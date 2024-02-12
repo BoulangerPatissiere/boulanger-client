@@ -1,10 +1,5 @@
 import * as React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import ElevatingAppBar from './components/AppBar/ElevatingAppBar';
 import { CAKES_ROUTE, ABOUT_ROUTE } from './global/constants';
@@ -18,14 +13,14 @@ import './App.css';
 const theme = createTheme({
   palette: {
     primary: {
-      light: "#db9b8b",
-      main: "#803a2a",
-      dark: "#4f1212",
+      light: '#db9b8b',
+      main: '#803a2a',
+      dark: '#4f1212',
     },
     secondary: {
-      light: "#83d2e6",
-      main: "#2a7080",
-      dark: "#214e56"
+      light: '#83d2e6',
+      main: '#2a7080',
+      dark: '#214e56',
     },
   },
 });
@@ -34,18 +29,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterMoment}>
-        <div className="page">
-          <div className="page-content">
+        <div className='page'>
+          <div className='page-content'>
             <BrowserRouter>
               <CssBaseline />
               <ElevatingAppBar></ElevatingAppBar>
               <Routes>
                 <Route path={CAKES_ROUTE} element={<CakesContainer />} />
                 {/* <Route path={ABOUT_ROUTE} element={<h1>ABOUT</h1>} /> */}
-                <Route
-                  path="*"
-                  element={<Navigate to="/" replace />}
-                />
+                <Route path='*' element={<Navigate to='/' replace />} />
               </Routes>
             </BrowserRouter>
           </div>
