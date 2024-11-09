@@ -28,8 +28,8 @@ function SocialFooter() {
           </a>
         </Grid>
         <Grid item xs={6} md={2}>
-          <a href='tel:+421-940-062-958' className='social-footer-link left-col'>
-            <PhoneIcon className='social-footer-link-icon' /> +421 940 062 958
+          <a href='tel:+421-940-050-801' className='social-footer-link left-col'>
+            <PhoneIcon className='social-footer-link-icon' /> +421 940 050 801
           </a>
         </Grid>
         <Grid item xs={6} md={3}>
