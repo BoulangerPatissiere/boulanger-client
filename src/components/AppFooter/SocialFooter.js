@@ -18,8 +18,8 @@ function SocialFooter() {
           </div>
         </Grid>
         <Grid item xs={6} md={2}>
-          <a className='social-footer-link left-col' href='https://instagram.com/boulanger_patissiere' target='_blank'>
-            <InstagramIcon className='social-footer-link-icon' /> Instagram
+          <a href='tel:+421-940-050-801' className='social-footer-link left-col'>
+            <PhoneIcon className='social-footer-link-icon' /> +421 940 050 801
           </a>
         </Grid>
         <Grid item xs={6} md={2}>
@@ -28,8 +28,8 @@ function SocialFooter() {
           </a>
         </Grid>
         <Grid item xs={6} md={2}>
-          <a href='tel:+421-940-050-801' className='social-footer-link left-col'>
-            <PhoneIcon className='social-footer-link-icon' /> +421 940 050 801
+          <a className='social-footer-link left-col' href='https://instagram.com/boulanger_patissiere' target='_blank'>
+            <InstagramIcon className='social-footer-link-icon' /> Instagram
           </a>
         </Grid>
         <Grid item xs={6} md={3}>
