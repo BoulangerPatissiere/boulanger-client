@@ -12,7 +12,7 @@ function SocialFooter() {
     <footer className='social-footer'>
       <Grid container rowSpacing={{ xs: 1, md: 0 }} columnSpacing={1}>
         <Grid item xs={12} md={3}>
-          <div className='left-col address-block'>
+          <div className='center-col address-block'>
             <PlaceIcon className='social-footer-link-icon' />
             Ľ. Fullu 5245/62, Bratislava
           </div>
